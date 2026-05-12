@@ -18,12 +18,22 @@ export default function HomeView({ library, onPlay, currentTrackId, isPlaying, f
 
   return (
     <div className="space-y-10">
-      <header className="pt-2">
-        <div className="flex items-center gap-2 mb-1">
-          <Logo size={24} className="text-emerald-400" />
-          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-mono">EAR LAB</p>
+      <header className="pt-2 flex items-start justify-between gap-4">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <Logo size={24} className="text-emerald-400" />
+            <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-mono">EAR LAB</p>
+          </div>
+          <h1 className="text-4xl font-serif font-light text-zinc-100">own·music</h1>
         </div>
-        <h1 className="text-4xl font-serif font-light text-zinc-100">own·music</h1>
+        <a
+          href="https://la-famiglia-alpha.vercel.app/"
+          aria-label="Vai a la-famiglia"
+          title="la-famiglia"
+          className="shrink-0 w-12 h-12 rounded-full overflow-hidden bg-zinc-900/60 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900 transition flex items-center justify-center"
+        >
+          <img src={`${import.meta.env.BASE_URL}la-famiglia.jpg`} alt="" className="w-9 h-9 object-contain" />
+        </a>
       </header>
 
       <section>
