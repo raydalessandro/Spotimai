@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-12T15:48:49.367Z",
+  "generatedAt": "2026-05-12T17:26:09.774Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -48,6 +48,36 @@
       "path": "boom-bap/ray/demo/05-mezzi-immaginari-remix.mp3"
     },
     {
+      "id": "7js7rfhvob",
+      "title": "Hallelujah",
+      "artist": "Jeff Buckley",
+      "album": "Grace",
+      "genre": "Cantautori Internazionali",
+      "duration": 394,
+      "year": 1994,
+      "path": "cantautori-internazionali/jeff-buckley/grace/07-hallelujah.mp3"
+    },
+    {
+      "id": "w2suylbq27",
+      "title": "L'isola che non c'è",
+      "artist": "Edoardo Bennato",
+      "album": "Burattino senza fili",
+      "genre": "Cantautori Italiani",
+      "duration": 241,
+      "year": 1977,
+      "path": "cantautori-italiani/edoardo-bennato/burattino-senza-fili/01-l-isola-che-non-c-e.mp3"
+    },
+    {
+      "id": "vv9xmh6rm6",
+      "title": "29 settembre",
+      "artist": "Lucio Battisti",
+      "album": "Lucio Battisti",
+      "genre": "Cantautori Italiani",
+      "duration": 212,
+      "year": 1969,
+      "path": "cantautori-italiani/lucio-battisti/lucio-battisti-1969/01-29-settembre.opus"
+    },
+    {
       "id": "4shpp0n1zl",
       "title": "Attenti al lupo",
       "artist": "Lucio Dalla",
@@ -66,6 +96,56 @@
       "duration": 265,
       "year": 1979,
       "path": "cantautori-italiani/lucio-dalla/lucio-dalla-1979/01-l-anno-che-verra.mp3"
+    },
+    {
+      "id": "is5tfj46gc",
+      "title": "Sono qui",
+      "artist": "Zucchero",
+      "album": "Spirit",
+      "genre": "Cantautori Italiani",
+      "duration": 236,
+      "year": 2002,
+      "path": "cantautori-italiani/zucchero/spirit/01-sono-qui.mp3"
+    },
+    {
+      "id": "01pdxphc4s",
+      "title": "Tu non mi avrai così",
+      "artist": "Zucchero",
+      "album": "Spirit",
+      "genre": "Cantautori Italiani",
+      "duration": 136,
+      "year": 2002,
+      "path": "cantautori-italiani/zucchero/spirit/02-tu-non-mi-avrai-cosi.mp3"
+    },
+    {
+      "id": "u2b0ra1ri8",
+      "title": "Levati di dosso",
+      "artist": "Zucchero",
+      "album": "Spirit",
+      "genre": "Cantautori Italiani",
+      "duration": 116,
+      "year": 2002,
+      "path": "cantautori-italiani/zucchero/spirit/03-levati-di-dosso.mp3"
+    },
+    {
+      "id": "t5qg954i8o",
+      "title": "Suona il corno",
+      "artist": "Zucchero",
+      "album": "Spirit",
+      "genre": "Cantautori Italiani",
+      "duration": 208,
+      "year": 2002,
+      "path": "cantautori-italiani/zucchero/spirit/04-suona-il-corno.mp3"
+    },
+    {
+      "id": "b3wqhegv5y",
+      "title": "Sempre e per sempre",
+      "artist": "Zucchero",
+      "album": "Spirit",
+      "genre": "Cantautori Italiani",
+      "duration": 193,
+      "year": 2002,
+      "path": "cantautori-italiani/zucchero/spirit/05-sempre-e-per-sempre.mp3"
     }
   ],
   "autoPlaylists": {
@@ -77,9 +157,19 @@
         "dz7sockskc",
         "brbgwhfwyf"
       ],
+      "Cantautori Internazionali": [
+        "7js7rfhvob"
+      ],
       "Cantautori Italiani": [
+        "w2suylbq27",
+        "vv9xmh6rm6",
         "4shpp0n1zl",
-        "nt6somdkaa"
+        "nt6somdkaa",
+        "is5tfj46gc",
+        "01pdxphc4s",
+        "u2b0ra1ri8",
+        "t5qg954i8o",
+        "b3wqhegv5y"
       ]
     },
     "byArtist": {
@@ -90,9 +180,25 @@
         "dz7sockskc",
         "brbgwhfwyf"
       ],
+      "Jeff Buckley": [
+        "7js7rfhvob"
+      ],
+      "Edoardo Bennato": [
+        "w2suylbq27"
+      ],
+      "Lucio Battisti": [
+        "vv9xmh6rm6"
+      ],
       "Lucio Dalla": [
         "4shpp0n1zl",
         "nt6somdkaa"
+      ],
+      "Zucchero": [
+        "is5tfj46gc",
+        "01pdxphc4s",
+        "u2b0ra1ri8",
+        "t5qg954i8o",
+        "b3wqhegv5y"
       ]
     },
     "byAlbum": {
@@ -103,11 +209,27 @@
         "dz7sockskc",
         "brbgwhfwyf"
       ],
+      "Grace|Jeff Buckley": [
+        "7js7rfhvob"
+      ],
+      "Burattino senza fili|Edoardo Bennato": [
+        "w2suylbq27"
+      ],
+      "Lucio Battisti|Lucio Battisti": [
+        "vv9xmh6rm6"
+      ],
       "Cambio|Lucio Dalla": [
         "4shpp0n1zl"
       ],
       "Lucio Dalla|Lucio Dalla": [
         "nt6somdkaa"
+      ],
+      "Spirit|Zucchero": [
+        "is5tfj46gc",
+        "01pdxphc4s",
+        "u2b0ra1ri8",
+        "t5qg954i8o",
+        "b3wqhegv5y"
       ]
     }
   },
