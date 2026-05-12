@@ -1,6 +1,7 @@
 import { Plus, Tag, Mic2, Disc3 } from 'lucide-react';
 import Cover from '../components/Cover';
 import TrackRow from '../components/TrackRow';
+import Logo from '../components/Logo';
 import type { ViewProps } from './_shared';
 
 export default function HomeView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, navigate, openCreatePlaylist, openAddToPlaylist }: ViewProps) {
@@ -13,7 +14,10 @@ export default function HomeView({ library, onPlay, currentTrackId, isPlaying, f
   return (
     <div className="space-y-10">
       <header className="pt-2">
-        <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-mono mb-1">EAR LAB</p>
+        <div className="flex items-center gap-2 mb-1">
+          <Logo size={24} className="text-emerald-400" />
+          <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-mono">EAR LAB</p>
+        </div>
         <h1 className="text-4xl font-serif font-light text-zinc-100">own·music</h1>
       </header>
 

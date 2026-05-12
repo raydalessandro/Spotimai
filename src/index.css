@@ -36,4 +36,12 @@ body {
   .animate-fade-in {
     animation: fade-in 200ms ease-out;
   }
+  @keyframes spiral-breathe {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.85; }
+    50% { transform: scale(1.06) rotate(2deg); opacity: 1; }
+  }
+  .animate-spiral-breathe {
+    animation: spiral-breathe 4s ease-in-out infinite;
+    transform-origin: center;
+  }
 }

@@ -10,6 +10,7 @@ import SearchView from './views/SearchView';
 import PlaylistsView from './views/PlaylistsView';
 import CreatePlaylistModal from './views/CreatePlaylistModal';
 import AddToPlaylistModal from './views/AddToPlaylistModal';
+import Logo from './components/Logo';
 import { loadLibrary } from './lib/library';
 import { usePlayer } from './state/usePlayer';
 import { useFavorites } from './state/useFavorites';
@@ -74,11 +75,7 @@ export default function App() {
   if (!library) {
     return (
       <div className="min-h-screen bg-zinc-950 flex items-center justify-center">
-        <div className="flex gap-0.5 items-end h-4">
-          <span className="w-0.5 bg-emerald-400 animate-pulse-bar" style={{ height: '60%' }}></span>
-          <span className="w-0.5 bg-emerald-400 animate-pulse-bar" style={{ height: '100%', animationDelay: '150ms' }}></span>
-          <span className="w-0.5 bg-emerald-400 animate-pulse-bar" style={{ height: '40%', animationDelay: '300ms' }}></span>
-        </div>
+        <Logo size={48} animated className="text-emerald-400" />
       </div>
     );
   }
@@ -101,8 +98,11 @@ export default function App() {
       <div className="flex">
         <aside className="hidden md:flex md:flex-col w-60 h-screen sticky top-0 border-r border-zinc-900 p-4 gap-1">
           <div className="px-3 py-4 mb-2">
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-600 font-mono">EAR LAB</p>
-            <h1 className="text-2xl font-serif font-light text-zinc-100 mt-1">own·music</h1>
+            <div className="flex items-center gap-2 mb-1">
+              <Logo size={20} className="text-emerald-400" />
+              <p className="text-xs uppercase tracking-[0.25em] text-zinc-600 font-mono">EAR LAB</p>
+            </div>
+            <h1 className="text-2xl font-serif font-light text-zinc-100">own·music</h1>
           </div>
           <NavItem icon={<Compass size={16} strokeWidth={1.5} />} label="Home" active={view.kind === 'home'} onClick={() => { setView({ kind: 'home' }); setHistory([]); }} />
           <NavItem icon={<Search size={16} strokeWidth={1.5} />} label="Cerca" active={view.kind === 'search'} onClick={() => { setView({ kind: 'search' }); setHistory([]); }} />
