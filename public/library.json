@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-12T17:26:09.774Z",
+  "generatedAt": "2026-05-12T18:15:52.712Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -48,6 +48,16 @@
       "path": "boom-bap/ray/demo/05-mezzi-immaginari-remix.mp3"
     },
     {
+      "id": "utahahq2ca",
+      "title": "Hallelujah",
+      "artist": "Alexandra Burke",
+      "album": "Overcome",
+      "genre": "Cantautori Internazionali",
+      "duration": 213,
+      "year": 2009,
+      "path": "cantautori-internazionali/alexandra-burke/overcome/02-hallelujah.mp3"
+    },
+    {
       "id": "7js7rfhvob",
       "title": "Hallelujah",
       "artist": "Jeff Buckley",
@@ -66,6 +76,26 @@
       "duration": 241,
       "year": 1977,
       "path": "cantautori-italiani/edoardo-bennato/burattino-senza-fili/01-l-isola-che-non-c-e.mp3"
+    },
+    {
+      "id": "622as11550",
+      "title": "Il gatto e la volpe",
+      "artist": "Edoardo Bennato",
+      "album": "Burattino senza fili",
+      "genre": "Cantautori Italiani",
+      "duration": 179,
+      "year": 1977,
+      "path": "cantautori-italiani/edoardo-bennato/burattino-senza-fili/03-il-gatto-e-la-volpe.mp3"
+    },
+    {
+      "id": "ageov2lhxe",
+      "title": "Il pescatore",
+      "artist": "Fabrizio De André",
+      "album": "Canzoni",
+      "genre": "Cantautori Italiani",
+      "duration": 140,
+      "year": 1974,
+      "path": "cantautori-italiani/fabrizio-de-andre/canzoni/09-il-pescatore.mp3"
     },
     {
       "id": "vv9xmh6rm6",
@@ -158,10 +188,13 @@
         "brbgwhfwyf"
       ],
       "Cantautori Internazionali": [
+        "utahahq2ca",
         "7js7rfhvob"
       ],
       "Cantautori Italiani": [
         "w2suylbq27",
+        "622as11550",
+        "ageov2lhxe",
         "vv9xmh6rm6",
         "4shpp0n1zl",
         "nt6somdkaa",
@@ -180,11 +213,18 @@
         "dz7sockskc",
         "brbgwhfwyf"
       ],
+      "Alexandra Burke": [
+        "utahahq2ca"
+      ],
       "Jeff Buckley": [
         "7js7rfhvob"
       ],
       "Edoardo Bennato": [
-        "w2suylbq27"
+        "w2suylbq27",
+        "622as11550"
+      ],
+      "Fabrizio De André": [
+        "ageov2lhxe"
       ],
       "Lucio Battisti": [
         "vv9xmh6rm6"
@@ -209,11 +249,18 @@
         "dz7sockskc",
         "brbgwhfwyf"
       ],
+      "Overcome|Alexandra Burke": [
+        "utahahq2ca"
+      ],
       "Grace|Jeff Buckley": [
         "7js7rfhvob"
       ],
       "Burattino senza fili|Edoardo Bennato": [
-        "w2suylbq27"
+        "w2suylbq27",
+        "622as11550"
+      ],
+      "Canzoni|Fabrizio De André": [
+        "ageov2lhxe"
       ],
       "Lucio Battisti|Lucio Battisti": [
         "vv9xmh6rm6"
