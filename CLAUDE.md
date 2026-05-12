@@ -36,7 +36,7 @@ PWA personale per ascoltare musica. Uso familiare privato, non pubblico, niente 
 src/
   components/   componenti UI presentational (no business logic, no state)
   views/        schermate complete; ricevono props da App.tsx
-  state/        custom hooks (usePlayer, useFavorites, useCustomPlaylists)
+  state/        custom hooks (usePlayer, useFavorites, useCustomPlaylists, useHistory)
   lib/          types, utils puri, fetch del manifest
   test/         setup vitest (clear localStorage tra i test)
 ```
@@ -45,6 +45,7 @@ src/
 - **Tutti i componenti vivono a livello modulo, MAI definiti dentro la function component App.** Definirli dentro causa rimontaggi a ogni render e perdita di stato/eventi (era il bug della prima versione).
 - **Hook `usePlayer`** wrappa un singolo `HTMLAudioElement` ref-stable, espone playTrack/togglePlay/skipNext/skipPrev/seek/toggleShuffle/cycleRepeat. Gestisce Media Session API per i metadata su lockscreen.
 - **Hook `useCustomPlaylists`** persiste le bozze in `localStorage` (`own-music:drafts`) e dedupa automaticamente verso `library.customPlaylists` per `id` o nome normalizzato.
+- **Hook `useHistory`** traccia le ultime 20 tracce riprodotte in `localStorage` (`own-music:history`, schemaVersion 1) con dedup move-to-top. Alimentato da `handlePlay` in `App.tsx`; consumato dalla sezione "Ultime riprodotte" della Home.
 
 ## Workflow di sviluppo
 
@@ -141,10 +142,10 @@ Quando arrivano nuovi file (sopratutto da download di terze parti), **fare sempr
 ## TODO ordinati per priorità
 
 1. ✅ **Playlist custom CRUD lato app** (fatto: bozze locali in localStorage + export JSON).
-2. **Service Worker per offline + caching mp3** (PWA seria).
-3. **Cover art** estratta dai tag ID3 quando presente, fallback su `_cover.jpg` nella cartella album, fallback su gradient.
-4. **Coda visibile** come pannello laterale/bottom sheet.
-5. **Cronologia ascolti** in IndexedDB.
+2. ✅ **Cronologia ascolti** (fatto: `useHistory` in localStorage, ultime 20 tracce, sezione "Ultime riprodotte" in Home). Migrare a IndexedDB solo se serve persistenza più robusta o storia più lunga.
+3. **Service Worker per offline + caching mp3** (PWA seria).
+4. **Cover art** estratta dai tag ID3 quando presente, fallback su `_cover.jpg` nella cartella album, fallback su gradient.
+5. **Coda visibile** come pannello laterale/bottom sheet.
 6. **Smart playlists** (filtri dinamici: "tutto Wu-Tang", "tracce sotto i 3 min", ecc).
 7. **Git LFS** per gli mp3 quando il repo si avvicina a 1 GB (~200 tracce a 5 MB).
 
