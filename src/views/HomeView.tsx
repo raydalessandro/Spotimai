@@ -2,14 +2,19 @@ import { Plus, Tag, Mic2, Disc3 } from 'lucide-react';
 import Cover from '../components/Cover';
 import TrackRow from '../components/TrackRow';
 import Logo from '../components/Logo';
+import { trackById } from '../lib/library';
 import type { ViewProps } from './_shared';
 
-export default function HomeView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, navigate, openCreatePlaylist, openAddToPlaylist }: ViewProps) {
-  const recents = library.tracks.slice(0, 5);
-  const recentIds = recents.map(t => t.id);
+export default function HomeView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, navigate, openCreatePlaylist, openAddToPlaylist, drafts, recentlyPlayed }: ViewProps) {
+  const recent = recentlyPlayed
+    .map(id => trackById(library, id))
+    .filter((t): t is NonNullable<typeof t> => t !== undefined)
+    .slice(0, 5);
+  const recentIds = recent.map(t => t.id);
   const numGenres = Object.keys(library.autoPlaylists.byGenre).length;
   const numArtists = Object.keys(library.autoPlaylists.byArtist).length;
   const numAlbums = Object.keys(library.autoPlaylists.byAlbum).length;
+  const noPlaylists = drafts.length === 0 && library.customPlaylists.length === 0;
 
   return (
     <div className="space-y-10">
@@ -27,9 +32,22 @@ export default function HomeView({ library, onPlay, currentTrackId, isPlaying, f
           <button onClick={() => navigate({ kind: 'playlists' })} className="text-xs text-zinc-500 hover:text-zinc-300 transition">vedi tutte →</button>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {library.customPlaylists.length === 0 && (
+          {noPlaylists && (
             <p className="text-xs text-zinc-600 col-span-full font-mono">nessuna playlist · creane una qui sotto</p>
           )}
+          {drafts.map(pl => (
+            <button
+              key={`draft-${pl.id}`}
+              onClick={() => navigate({ kind: 'list', title: pl.name, subtitle: `bozza · ${pl.trackIds.length} tracce`, trackIds: pl.trackIds, seed: pl.id, kind2: 'playlist' })}
+              className="flex items-center gap-3 bg-zinc-900/50 hover:bg-zinc-800/80 rounded-md overflow-hidden transition border border-zinc-800/50 text-left"
+            >
+              <Cover seed={pl.id} label={pl.name} size="lg" />
+              <div className="min-w-0 pr-3">
+                <p className="text-sm text-zinc-200 font-medium truncate">{pl.name}</p>
+                <p className="text-[11px] text-amber-500/80 truncate font-mono">bozza · {pl.trackIds.length} tracce</p>
+              </div>
+            </button>
+          ))}
           {library.customPlaylists.map(pl => (
             <button
               key={pl.id}
@@ -78,11 +96,11 @@ export default function HomeView({ library, onPlay, currentTrackId, isPlaying, f
         </div>
       </section>
 
-      {recents.length > 0 && (
+      {recent.length > 0 && (
         <section>
-          <h2 className="text-lg font-serif text-zinc-200 mb-4">Tutte le tracce</h2>
+          <h2 className="text-lg font-serif text-zinc-200 mb-4">Ultime riprodotte</h2>
           <div className="space-y-1">
-            {recents.map(t => (
+            {recent.map(t => (
               <TrackRow
                 key={t.id}
                 track={t}

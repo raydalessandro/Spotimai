@@ -15,6 +15,7 @@ import { loadLibrary } from './lib/library';
 import { usePlayer } from './state/usePlayer';
 import { useFavorites } from './state/useFavorites';
 import { useCustomPlaylists } from './state/useCustomPlaylists';
+import { useHistory } from './state/useHistory';
 import type { Library, View } from './lib/types';
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
   const player = usePlayer(library);
   const { favorites, toggle: toggleFav } = useFavorites();
   const playlists = useCustomPlaylists(library);
+  const playHistory = useHistory();
 
   useEffect(() => {
     loadLibrary()
@@ -53,6 +55,7 @@ export default function App() {
 
   const handlePlay = (trackId: string, contextIds?: string[]) => {
     const isFirstPlay = player.currentTrackId === null;
+    playHistory.push(trackId);
     player.playTrack(trackId, contextIds);
     if (isFirstPlay && typeof window !== 'undefined' && window.innerWidth < 768) {
       setTimeout(() => setShowFullPlayer(true), 80);
@@ -91,6 +94,8 @@ export default function App() {
     goBack,
     openCreatePlaylist: () => setShowCreatePlaylist(true),
     openAddToPlaylist: (trackId: string) => setAddToPlaylistTrackId(trackId),
+    drafts: playlists.drafts,
+    recentlyPlayed: playHistory.history,
   };
 
   return (

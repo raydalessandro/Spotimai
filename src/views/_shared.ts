@@ -1,4 +1,4 @@
-import type { Library, View } from '../lib/types';
+import type { Library, Playlist, View } from '../lib/types';
 
 export type ViewProps = {
   library: Library;
@@ -11,4 +11,6 @@ export type ViewProps = {
   goBack: () => void;
   openCreatePlaylist: () => void;
   openAddToPlaylist: (trackId: string) => void;
+  drafts: Playlist[];
+  recentlyPlayed: string[];
 };
