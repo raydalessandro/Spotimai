@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-12T15:03:34.952Z",
+  "generatedAt": "2026-05-12T15:48:49.367Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -46,6 +46,26 @@
       "genre": "Boom Bap",
       "duration": 153,
       "path": "boom-bap/ray/demo/05-mezzi-immaginari-remix.mp3"
+    },
+    {
+      "id": "4shpp0n1zl",
+      "title": "Attenti al lupo",
+      "artist": "Lucio Dalla",
+      "album": "Cambio",
+      "genre": "Cantautori Italiani",
+      "duration": 260,
+      "year": 1990,
+      "path": "cantautori-italiani/lucio-dalla/cambio/01-attenti-al-lupo.mp3"
+    },
+    {
+      "id": "nt6somdkaa",
+      "title": "L'anno che verrà",
+      "artist": "Lucio Dalla",
+      "album": "Lucio Dalla",
+      "genre": "Cantautori Italiani",
+      "duration": 265,
+      "year": 1979,
+      "path": "cantautori-italiani/lucio-dalla/lucio-dalla-1979/01-l-anno-che-verra.mp3"
     }
   ],
   "autoPlaylists": {
@@ -56,6 +76,10 @@
         "qg3sjlq21c",
         "dz7sockskc",
         "brbgwhfwyf"
+      ],
+      "Cantautori Italiani": [
+        "4shpp0n1zl",
+        "nt6somdkaa"
       ]
     },
     "byArtist": {
@@ -65,6 +89,10 @@
         "qg3sjlq21c",
         "dz7sockskc",
         "brbgwhfwyf"
+      ],
+      "Lucio Dalla": [
+        "4shpp0n1zl",
+        "nt6somdkaa"
       ]
     },
     "byAlbum": {
@@ -74,6 +102,12 @@
         "qg3sjlq21c",
         "dz7sockskc",
         "brbgwhfwyf"
+      ],
+      "Cambio|Lucio Dalla": [
+        "4shpp0n1zl"
+      ],
+      "Lucio Dalla|Lucio Dalla": [
+        "nt6somdkaa"
       ]
     }
   },
