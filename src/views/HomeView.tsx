@@ -3,7 +3,7 @@ import Cover from '../components/Cover';
 import TrackRow from '../components/TrackRow';
 import type { ViewProps } from './_shared';
 
-export default function HomeView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, navigate, openCreatePlaylist }: ViewProps) {
+export default function HomeView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, navigate, openCreatePlaylist, openAddToPlaylist }: ViewProps) {
   const recents = library.tracks.slice(0, 5);
   const recentIds = recents.map(t => t.id);
   const numGenres = Object.keys(library.autoPlaylists.byGenre).length;
@@ -86,6 +86,7 @@ export default function HomeView({ library, onPlay, currentTrackId, isPlaying, f
                 isPlaying={currentTrackId === t.id && isPlaying}
                 isFav={favorites.has(t.id)}
                 onToggleFav={() => toggleFav(t.id)}
+                onAddToPlaylist={() => openAddToPlaylist(t.id)}
               />
             ))}
           </div>

@@ -3,7 +3,7 @@ import { Search } from 'lucide-react';
 import TrackRow from '../components/TrackRow';
 import type { ViewProps } from './_shared';
 
-export default function SearchView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav }: ViewProps) {
+export default function SearchView({ library, onPlay, currentTrackId, isPlaying, favorites, toggleFav, openAddToPlaylist }: ViewProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const q = searchQuery.toLowerCase().trim();
   const results = q ? library.tracks.filter(t =>
@@ -42,6 +42,7 @@ export default function SearchView({ library, onPlay, currentTrackId, isPlaying,
                 isPlaying={currentTrackId === t.id && isPlaying}
                 isFav={favorites.has(t.id)}
                 onToggleFav={() => toggleFav(t.id)}
+                onAddToPlaylist={() => openAddToPlaylist(t.id)}
               />
             ))}
           </div>

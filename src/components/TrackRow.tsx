@@ -1,4 +1,4 @@
-import { Play, Heart } from 'lucide-react';
+import { Play, Heart, ListPlus } from 'lucide-react';
 import type { Track } from '../lib/types';
 import { fmtTime } from '../lib/utils';
 import Cover from './Cover';
@@ -10,9 +10,10 @@ type Props = {
   isPlaying?: boolean;
   isFav?: boolean;
   onToggleFav?: () => void;
+  onAddToPlaylist?: () => void;
 };
 
-export default function TrackRow({ track, index, onPlay, isPlaying, isFav, onToggleFav }: Props) {
+export default function TrackRow({ track, index, onPlay, isPlaying, isFav, onToggleFav, onAddToPlaylist }: Props) {
   return (
     <div
       role="button"
@@ -42,10 +43,21 @@ export default function TrackRow({ track, index, onPlay, isPlaying, isFav, onTog
           <p className="text-xs text-zinc-500 truncate">{track.artist} · {track.album}</p>
         </div>
       </div>
-      <div className="flex items-center gap-3 text-zinc-500">
+      <div className="flex items-center gap-2 text-zinc-500">
+        {onAddToPlaylist && (
+          <button
+            type="button"
+            aria-label="Aggiungi a playlist"
+            onClick={(e) => { e.stopPropagation(); onAddToPlaylist(); }}
+            className="p-1 md:opacity-0 md:group-hover:opacity-100 transition hover:text-zinc-200"
+          >
+            <ListPlus size={14} />
+          </button>
+        )}
         {onToggleFav && (
           <button
             type="button"
+            aria-label={isFav ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
             onClick={(e) => { e.stopPropagation(); onToggleFav(); }}
             className={`p-1 md:opacity-0 md:group-hover:opacity-100 transition ${isFav ? '!opacity-100 text-rose-400' : 'hover:text-zinc-200'}`}
           >

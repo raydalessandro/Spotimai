@@ -12,7 +12,7 @@ type Props = ViewProps & {
   kind2?: string;
 };
 
-export default function ListView({ library, title, subtitle, trackIds, seed, kind2, onPlay, currentTrackId, isPlaying, favorites, toggleFav, goBack }: Props) {
+export default function ListView({ library, title, subtitle, trackIds, seed, kind2, onPlay, currentTrackId, isPlaying, favorites, toggleFav, goBack, openAddToPlaylist }: Props) {
   const tracks = trackIds.map(id => trackById(library, id)).filter((t): t is NonNullable<typeof t> => !!t);
   const totalSec = tracks.reduce((s, t) => s + t.duration, 0);
 
@@ -60,6 +60,7 @@ export default function ListView({ library, title, subtitle, trackIds, seed, kin
             isPlaying={currentTrackId === t.id && isPlaying}
             isFav={favorites.has(t.id)}
             onToggleFav={() => toggleFav(t.id)}
+            onAddToPlaylist={() => openAddToPlaylist(t.id)}
           />
         ))}
       </div>

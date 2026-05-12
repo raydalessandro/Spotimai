@@ -10,4 +10,5 @@ export type ViewProps = {
   navigate: (v: View) => void;
   goBack: () => void;
   openCreatePlaylist: () => void;
+  openAddToPlaylist: (trackId: string) => void;
 };

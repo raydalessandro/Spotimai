@@ -1,4 +1,4 @@
-import { Play, Pause, SkipBack, SkipForward, Shuffle, Repeat, Heart, ChevronDown, MoreHorizontal } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Shuffle, Repeat, Heart, ChevronDown, ListPlus } from 'lucide-react';
 import type { Track, RepeatMode } from '../lib/types';
 import { fmtTime, gradientFor } from '../lib/utils';
 import Cover from './Cover';
@@ -19,9 +19,10 @@ type Props = {
   onCycleRepeat: () => void;
   onToggleFav: () => void;
   onSeek: (time: number) => void;
+  onAddToPlaylist: () => void;
 };
 
-export default function FullPlayer({ track, isPlaying, progress, duration, shuffle, repeat, isFav, onClose, onTogglePlay, onSkipNext, onSkipPrev, onToggleShuffle, onCycleRepeat, onToggleFav, onSeek }: Props) {
+export default function FullPlayer({ track, isPlaying, progress, duration, shuffle, repeat, isFav, onClose, onTogglePlay, onSkipNext, onSkipPrev, onToggleShuffle, onCycleRepeat, onToggleFav, onSeek, onAddToPlaylist }: Props) {
   const totalSec = duration > 0 ? duration : track.duration;
   const pct = totalSec > 0 ? (progress / totalSec) * 100 : 0;
 
@@ -43,7 +44,7 @@ export default function FullPlayer({ track, isPlaying, progress, duration, shuff
             <p className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-mono">in riproduzione</p>
             <p className="text-xs text-zinc-400 mt-0.5">{track.album}</p>
           </div>
-          <button className="text-zinc-400 hover:text-zinc-100 p-2"><MoreHorizontal size={20} strokeWidth={1.5} /></button>
+          <button onClick={onAddToPlaylist} aria-label="Aggiungi a playlist" className="text-zinc-400 hover:text-zinc-100 p-2"><ListPlus size={20} strokeWidth={1.5} /></button>
         </header>
 
         <div className="flex-1 flex items-center justify-center my-4">
