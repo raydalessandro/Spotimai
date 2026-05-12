@@ -9,9 +9,11 @@ import ListView from './views/ListView';
 import SearchView from './views/SearchView';
 import PlaylistsView from './views/PlaylistsView';
 import CreatePlaylistModal from './views/CreatePlaylistModal';
+import AddToPlaylistModal from './views/AddToPlaylistModal';
 import { loadLibrary } from './lib/library';
 import { usePlayer } from './state/usePlayer';
 import { useFavorites } from './state/useFavorites';
+import { useCustomPlaylists } from './state/useCustomPlaylists';
 import type { Library, View } from './lib/types';
 
 export default function App() {
@@ -21,9 +23,11 @@ export default function App() {
   const [history, setHistory] = useState<View[]>([]);
   const [showFullPlayer, setShowFullPlayer] = useState(false);
   const [showCreatePlaylist, setShowCreatePlaylist] = useState(false);
+  const [addToPlaylistTrackId, setAddToPlaylistTrackId] = useState<string | null>(null);
 
   const player = usePlayer(library);
   const { favorites, toggle: toggleFav } = useFavorites();
+  const playlists = useCustomPlaylists(library);
 
   useEffect(() => {
     loadLibrary()
@@ -89,6 +93,7 @@ export default function App() {
     navigate,
     goBack,
     openCreatePlaylist: () => setShowCreatePlaylist(true),
+    openAddToPlaylist: (trackId: string) => setAddToPlaylistTrackId(trackId),
   };
 
   return (
@@ -123,7 +128,14 @@ export default function App() {
             {view.kind === 'browse' && <BrowseView {...viewProps} type={view.type} />}
             {view.kind === 'list' && <ListView {...viewProps} title={view.title} subtitle={view.subtitle} trackIds={view.trackIds} seed={view.seed} kind2={view.kind2} />}
             {view.kind === 'search' && <SearchView {...viewProps} />}
-            {view.kind === 'playlists' && <PlaylistsView {...viewProps} />}
+            {view.kind === 'playlists' && (
+              <PlaylistsView
+                {...viewProps}
+                drafts={playlists.drafts}
+                exportJSON={playlists.exportJSON}
+                removeDraft={playlists.remove}
+              />
+            )}
           </div>
         </main>
       </div>
@@ -164,9 +176,25 @@ export default function App() {
           onCycleRepeat={player.cycleRepeat}
           onToggleFav={() => toggleFav(player.currentTrack!.id)}
           onSeek={player.seek}
+          onAddToPlaylist={() => setAddToPlaylistTrackId(player.currentTrack!.id)}
         />
       )}
-      {showCreatePlaylist && <CreatePlaylistModal onClose={() => setShowCreatePlaylist(false)} />}
+      {showCreatePlaylist && (
+        <CreatePlaylistModal
+          onClose={() => setShowCreatePlaylist(false)}
+          onCreate={playlists.create}
+        />
+      )}
+      {addToPlaylistTrackId && (
+        <AddToPlaylistModal
+          trackId={addToPlaylistTrackId}
+          library={library}
+          drafts={playlists.drafts}
+          onClose={() => setAddToPlaylistTrackId(null)}
+          onCreate={playlists.create}
+          onAddTrack={playlists.addTrack}
+        />
+      )}
     </div>
   );
 }
