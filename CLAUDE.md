@@ -41,7 +41,7 @@ src/
   test/         setup vitest (clear localStorage tra i test)
 ```
 
-- `App.tsx` è il root: tiene view+history (mini-router custom), inizializza player+favorites+playlists, passa props a tutte le view via un oggetto `ViewProps` condiviso.
+- `App.tsx` è il root: tiene view+history (mini-router custom), inizializza player+favorites+playlists, passa props a tutte le view via un oggetto `ViewProps` condiviso. Intercetta `popstate` (tasto indietro hardware Android PWA / back browser) con un sentinel `history.pushState` al mount: priorità di chiusura → modal AddToPlaylist → modal CreatePlaylist → FullPlayer → goBack sullo stack di view → uscita dall'app.
 - **Tutti i componenti vivono a livello modulo, MAI definiti dentro la function component App.** Definirli dentro causa rimontaggi a ogni render e perdita di stato/eventi (era il bug della prima versione).
 - **Hook `usePlayer`** wrappa un singolo `HTMLAudioElement` ref-stable, espone playTrack/togglePlay/skipNext/skipPrev/seek/toggleShuffle/cycleRepeat. Gestisce Media Session API per i metadata su lockscreen.
 - **Hook `useCustomPlaylists`** persiste le bozze in `localStorage` (`own-music:drafts`) e dedupa automaticamente verso `library.customPlaylists` per `id` o nome normalizzato.

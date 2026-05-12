@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Compass, Search, Library as LibraryIcon, Tag, Mic2, Disc3 } from 'lucide-react';
 import { NavItem, BottomNavItem } from './components/Nav';
 import MiniPlayer from './components/MiniPlayer';
@@ -36,6 +36,44 @@ export default function App() {
     loadLibrary()
       .then(setLibrary)
       .catch(err => setLoadError(err.message || 'Errore sconosciuto'));
+  }, []);
+
+  // Tasto indietro hardware (Android PWA) / browser back:
+  // prima chiude overlay aperti, poi pop dello stack di view, infine esce.
+  const backStateRef = useRef({ view, history, showFullPlayer, showCreatePlaylist, addToPlaylistTrackId });
+  backStateRef.current = { view, history, showFullPlayer, showCreatePlaylist, addToPlaylistTrackId };
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    window.history.pushState({ ownmusic: true }, '');
+    const onPop = () => {
+      const st = backStateRef.current;
+      let handled = false;
+      if (st.addToPlaylistTrackId !== null) {
+        setAddToPlaylistTrackId(null);
+        handled = true;
+      } else if (st.showCreatePlaylist) {
+        setShowCreatePlaylist(false);
+        handled = true;
+      } else if (st.showFullPlayer) {
+        setShowFullPlayer(false);
+        handled = true;
+      } else if (st.view.kind !== 'home') {
+        const prev = st.history[st.history.length - 1];
+        if (prev) {
+          setHistory(h => h.slice(0, -1));
+          setView(prev);
+        } else {
+          setView({ kind: 'home' });
+        }
+        handled = true;
+      }
+      if (handled) {
+        window.history.pushState({ ownmusic: true }, '');
+      }
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
   }, []);
 
   const navigate = (v: View) => {
