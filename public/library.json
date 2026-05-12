@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-12T18:24:12.278Z",
+  "generatedAt": "2026-05-12T18:37:03.981Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -282,12 +282,25 @@
   },
   "customPlaylists": [
     {
-      "id": "bambini-nanna",
-      "name": "Bambini Nanna",
+      "id": "nanna",
+      "name": "Nanna",
       "trackIds": [
-        "7js7rfhvob"
+        "7js7rfhvob",
+        "utahahq2ca"
       ],
       "createdAt": "2026-05-12T18:13:00.899Z"
+    },
+    {
+      "id": "spirit",
+      "name": "Spirit",
+      "trackIds": [
+        "is5tfj46gc",
+        "01pdxphc4s",
+        "u2b0ra1ri8",
+        "t5qg954i8o",
+        "b3wqhegv5y"
+      ],
+      "createdAt": "2026-05-12T18:34:42.019Z"
     }
   ]
 }
