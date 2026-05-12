@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-05-12T15:03:34.952Z",
+  "tracks": [
+    {
+      "id": "otefab39sr",
+      "title": "35",
+      "artist": "Ray",
+      "album": "Demo",
+      "genre": "Boom Bap",
+      "duration": 282,
+      "path": "boom-bap/ray/demo/01-35.mp3"
+    },
+    {
+      "id": "0lv483cny0",
+      "title": "Blu Remix",
+      "artist": "Ray",
+      "album": "Demo",
+      "genre": "Boom Bap",
+      "duration": 248,
+      "path": "boom-bap/ray/demo/02-blu-remix.mp3"
+    },
+    {
+      "id": "qg3sjlq21c",
+      "title": "City at Night",
+      "artist": "Ray",
+      "album": "Demo",
+      "genre": "Boom Bap",
+      "duration": 236,
+      "path": "boom-bap/ray/demo/03-city-at-night.mp3"
+    },
+    {
+      "id": "dz7sockskc",
+      "title": "Glass of Life Remix",
+      "artist": "Ray",
+      "album": "Demo",
+      "genre": "Boom Bap",
+      "duration": 240,
+      "path": "boom-bap/ray/demo/04-glass-of-life-remix.mp3"
+    },
+    {
+      "id": "brbgwhfwyf",
+      "title": "Mezzi Immaginari Remix",
+      "artist": "Ray",
+      "album": "Demo",
+      "genre": "Boom Bap",
+      "duration": 153,
+      "path": "boom-bap/ray/demo/05-mezzi-immaginari-remix.mp3"
+    }
+  ],
+  "autoPlaylists": {
+    "byGenre": {
+      "Boom Bap": [
+        "otefab39sr",
+        "0lv483cny0",
+        "qg3sjlq21c",
+        "dz7sockskc",
+        "brbgwhfwyf"
+      ]
+    },
+    "byArtist": {
+      "Ray": [
+        "otefab39sr",
+        "0lv483cny0",
+        "qg3sjlq21c",
+        "dz7sockskc",
+        "brbgwhfwyf"
+      ]
+    },
+    "byAlbum": {
+      "Demo|Ray": [
+        "otefab39sr",
+        "0lv483cny0",
+        "qg3sjlq21c",
+        "dz7sockskc",
+        "brbgwhfwyf"
+      ]
+    }
+  },
+  "customPlaylists": []
+}
