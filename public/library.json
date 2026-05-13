@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-13T07:46:45.034Z",
+  "generatedAt": "2026-05-13T07:52:49.932Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -234,6 +234,86 @@
       "duration": 193,
       "year": 2002,
       "path": "cantautori-italiani/zucchero/spirit/05-sempre-e-per-sempre.mp3"
+    },
+    {
+      "id": "i1jf8xn8sm",
+      "title": "Alpha 10 Hz · ambient · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Calm Focus Ambient",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/calm-focus-ambient/01-alpha-10hz-ambient.mp3"
+    },
+    {
+      "id": "evaukgqo37",
+      "title": "Alpha 10 Hz · binaural · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Calm Focus Binaural",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/calm-focus-binaural/01-alpha-10hz-binaural.mp3"
+    },
+    {
+      "id": "0zqw4h0k47",
+      "title": "Delta 2 Hz · ambient · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Deep Sleep Ambient",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/deep-sleep-ambient/01-delta-2hz-ambient.mp3"
+    },
+    {
+      "id": "qe8gyxtsdy",
+      "title": "Delta 2 Hz · binaural · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Deep Sleep Binaural",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/deep-sleep-binaural/01-delta-2hz-binaural.mp3"
+    },
+    {
+      "id": "s792rvd7tu",
+      "title": "Theta 6 Hz · ambient · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Meditation Ambient",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/meditation-ambient/01-theta-6hz-ambient.mp3"
+    },
+    {
+      "id": "xf3nf7m3u3",
+      "title": "Theta 6 Hz · binaural · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Meditation Binaural",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/meditation-binaural/01-theta-6hz-binaural.mp3"
+    },
+    {
+      "id": "r791f7zt1z",
+      "title": "Theta 6 Hz · recovery · ambient · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Recovery Ambient",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/recovery-ambient/01-theta-6hz-recovery-ambient.mp3"
+    },
+    {
+      "id": "6x14uxwex5",
+      "title": "Theta 6 Hz · recovery · binaural · 5 min loop",
+      "artist": "Binaurali",
+      "album": "Recovery Binaural",
+      "genre": "Risonanze",
+      "duration": 300,
+      "year": 2026,
+      "path": "risonanze/binaurali/recovery-binaural/01-theta-6hz-recovery-binaural.mp3"
     }
   ],
   "autoPlaylists": {
@@ -267,6 +347,16 @@
         "u2b0ra1ri8",
         "t5qg954i8o",
         "b3wqhegv5y"
+      ],
+      "Risonanze": [
+        "i1jf8xn8sm",
+        "evaukgqo37",
+        "0zqw4h0k47",
+        "qe8gyxtsdy",
+        "s792rvd7tu",
+        "xf3nf7m3u3",
+        "r791f7zt1z",
+        "6x14uxwex5"
       ]
     },
     "byArtist": {
@@ -309,6 +399,16 @@
         "u2b0ra1ri8",
         "t5qg954i8o",
         "b3wqhegv5y"
+      ],
+      "Binaurali": [
+        "i1jf8xn8sm",
+        "evaukgqo37",
+        "0zqw4h0k47",
+        "qe8gyxtsdy",
+        "s792rvd7tu",
+        "xf3nf7m3u3",
+        "r791f7zt1z",
+        "6x14uxwex5"
       ]
     },
     "byAlbum": {
@@ -359,6 +459,30 @@
         "u2b0ra1ri8",
         "t5qg954i8o",
         "b3wqhegv5y"
+      ],
+      "Calm Focus Ambient|Binaurali": [
+        "i1jf8xn8sm"
+      ],
+      "Calm Focus Binaural|Binaurali": [
+        "evaukgqo37"
+      ],
+      "Deep Sleep Ambient|Binaurali": [
+        "0zqw4h0k47"
+      ],
+      "Deep Sleep Binaural|Binaurali": [
+        "qe8gyxtsdy"
+      ],
+      "Meditation Ambient|Binaurali": [
+        "s792rvd7tu"
+      ],
+      "Meditation Binaural|Binaurali": [
+        "xf3nf7m3u3"
+      ],
+      "Recovery Ambient|Binaurali": [
+        "r791f7zt1z"
+      ],
+      "Recovery Binaural|Binaurali": [
+        "6x14uxwex5"
       ]
     }
   },
