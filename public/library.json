@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-12T18:37:03.981Z",
+  "generatedAt": "2026-05-13T07:46:45.034Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -88,6 +88,25 @@
       "path": "cantautori-italiani/edoardo-bennato/burattino-senza-fili/03-il-gatto-e-la-volpe.mp3"
     },
     {
+      "id": "avrfodm883",
+      "title": "Quando sarai grande",
+      "artist": "Edoardo Bennato",
+      "album": "Burattino senza fili",
+      "genre": "Cantautori Italiani",
+      "duration": 287,
+      "year": 1977,
+      "path": "cantautori-italiani/edoardo-bennato/burattino-senza-fili/07-quando-sarai-grande.mp3"
+    },
+    {
+      "id": "oiy2o4nby9",
+      "title": "Venderò",
+      "artist": "Edoardo Bennato",
+      "album": "Singoli",
+      "genre": "Cantautori Italiani",
+      "duration": 246,
+      "path": "cantautori-italiani/edoardo-bennato/singoli/01-vendero.mp3"
+    },
+    {
       "id": "ageov2lhxe",
       "title": "Il pescatore",
       "artist": "Fabrizio De André",
@@ -98,6 +117,16 @@
       "path": "cantautori-italiani/fabrizio-de-andre/canzoni/09-il-pescatore.mp3"
     },
     {
+      "id": "qvkio04l1a",
+      "title": "Il mio canto libero",
+      "artist": "Lucio Battisti",
+      "album": "Il mio canto libero",
+      "genre": "Cantautori Italiani",
+      "duration": 309,
+      "year": 1972,
+      "path": "cantautori-italiani/lucio-battisti/il-mio-canto-libero/01-il-mio-canto-libero.mp3"
+    },
+    {
       "id": "vv9xmh6rm6",
       "title": "29 settembre",
       "artist": "Lucio Battisti",
@@ -106,6 +135,35 @@
       "duration": 212,
       "year": 1969,
       "path": "cantautori-italiani/lucio-battisti/lucio-battisti-1969/01-29-settembre.opus"
+    },
+    {
+      "id": "0kv11v16aj",
+      "title": "Prigioniero del mondo",
+      "artist": "Lucio Battisti",
+      "album": "Lucio Battisti",
+      "genre": "Cantautori Italiani",
+      "duration": 209,
+      "year": 1969,
+      "path": "cantautori-italiani/lucio-battisti/lucio-battisti-1969/06-prigioniero-del-mondo.mp3"
+    },
+    {
+      "id": "w3drw1fvou",
+      "title": "Acqua azzurra, acqua chiara",
+      "artist": "Lucio Battisti",
+      "album": "Lucio Battisti",
+      "genre": "Cantautori Italiani",
+      "duration": 214,
+      "year": 1969,
+      "path": "cantautori-italiani/lucio-battisti/lucio-battisti-1969/07-acqua-azzurra-acqua-chiara.mp3"
+    },
+    {
+      "id": "r3h8rc92r9",
+      "title": "Le tre verità",
+      "artist": "Lucio Battisti",
+      "album": "Singoli",
+      "genre": "Cantautori Italiani",
+      "duration": 293,
+      "path": "cantautori-italiani/lucio-battisti/singoli/01-le-tre-verita.mp3"
     },
     {
       "id": "4shpp0n1zl",
@@ -194,8 +252,14 @@
       "Cantautori Italiani": [
         "w2suylbq27",
         "622as11550",
+        "avrfodm883",
+        "oiy2o4nby9",
         "ageov2lhxe",
+        "qvkio04l1a",
         "vv9xmh6rm6",
+        "0kv11v16aj",
+        "w3drw1fvou",
+        "r3h8rc92r9",
         "4shpp0n1zl",
         "nt6somdkaa",
         "is5tfj46gc",
@@ -221,13 +285,19 @@
       ],
       "Edoardo Bennato": [
         "w2suylbq27",
-        "622as11550"
+        "622as11550",
+        "avrfodm883",
+        "oiy2o4nby9"
       ],
       "Fabrizio De André": [
         "ageov2lhxe"
       ],
       "Lucio Battisti": [
-        "vv9xmh6rm6"
+        "qvkio04l1a",
+        "vv9xmh6rm6",
+        "0kv11v16aj",
+        "w3drw1fvou",
+        "r3h8rc92r9"
       ],
       "Lucio Dalla": [
         "4shpp0n1zl",
@@ -257,13 +327,25 @@
       ],
       "Burattino senza fili|Edoardo Bennato": [
         "w2suylbq27",
-        "622as11550"
+        "622as11550",
+        "avrfodm883"
+      ],
+      "Singoli|Edoardo Bennato": [
+        "oiy2o4nby9"
       ],
       "Canzoni|Fabrizio De André": [
         "ageov2lhxe"
       ],
+      "Il mio canto libero|Lucio Battisti": [
+        "qvkio04l1a"
+      ],
       "Lucio Battisti|Lucio Battisti": [
-        "vv9xmh6rm6"
+        "vv9xmh6rm6",
+        "0kv11v16aj",
+        "w3drw1fvou"
+      ],
+      "Singoli|Lucio Battisti": [
+        "r3h8rc92r9"
       ],
       "Cambio|Lucio Dalla": [
         "4shpp0n1zl"
