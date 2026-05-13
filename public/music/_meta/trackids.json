@@ -23,7 +23,15 @@
     "cantautori-italiani/lucio-battisti/il-mio-canto-libero/01-il-mio-canto-libero.mp3": "qvkio04l1a",
     "cantautori-italiani/lucio-battisti/lucio-battisti-1969/06-prigioniero-del-mondo.mp3": "0kv11v16aj",
     "cantautori-italiani/lucio-battisti/lucio-battisti-1969/07-acqua-azzurra-acqua-chiara.mp3": "w3drw1fvou",
-    "cantautori-italiani/lucio-battisti/singoli/01-le-tre-verita.mp3": "r3h8rc92r9"
+    "cantautori-italiani/lucio-battisti/singoli/01-le-tre-verita.mp3": "r3h8rc92r9",
+    "risonanze/binaurali/calm-focus-ambient/01-alpha-10hz-ambient.mp3": "i1jf8xn8sm",
+    "risonanze/binaurali/calm-focus-binaural/01-alpha-10hz-binaural.mp3": "evaukgqo37",
+    "risonanze/binaurali/deep-sleep-ambient/01-delta-2hz-ambient.mp3": "0zqw4h0k47",
+    "risonanze/binaurali/deep-sleep-binaural/01-delta-2hz-binaural.mp3": "qe8gyxtsdy",
+    "risonanze/binaurali/meditation-ambient/01-theta-6hz-ambient.mp3": "s792rvd7tu",
+    "risonanze/binaurali/meditation-binaural/01-theta-6hz-binaural.mp3": "xf3nf7m3u3",
+    "risonanze/binaurali/recovery-ambient/01-theta-6hz-recovery-ambient.mp3": "r791f7zt1z",
+    "risonanze/binaurali/recovery-binaural/01-theta-6hz-recovery-binaural.mp3": "6x14uxwex5"
   },
   "byHash": {
     "a62e517222a2ad3cfa338176fb48078b": "otefab39sr",
@@ -49,6 +57,14 @@
     "5fd70c5953efb06b18c9ae3450ed5e81": "qvkio04l1a",
     "dfa8363bdaa08335f769469fb572b03c": "0kv11v16aj",
     "027f7bd0c9e0dbf3492cb931bb1e844a": "w3drw1fvou",
-    "2c0fd800fa0d7b367f57aec3770db781": "r3h8rc92r9"
+    "2c0fd800fa0d7b367f57aec3770db781": "r3h8rc92r9",
+    "482c8990960887b2da76925a3df7ef57": "i1jf8xn8sm",
+    "f1860024e9bd6b91786e068590c2c0cc": "evaukgqo37",
+    "9aa91e458ec9206ccd2a6417576d4e29": "0zqw4h0k47",
+    "558299a14e775a36409e83e569628ce3": "qe8gyxtsdy",
+    "a11c51fadd43a054b24d4c6b8706700e": "s792rvd7tu",
+    "84dd1c74ed86958afbe9e22110bc445a": "xf3nf7m3u3",
+    "c92908bb2a48a4061078ff5cb7771fec": "r791f7zt1z",
+    "802201dda234c577a3b6848ae0099037": "6x14uxwex5"
   }
 }
