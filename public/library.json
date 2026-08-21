@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-05-13T07:52:49.932Z",
+  "generatedAt": "2026-08-21T12:03:28.041Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -236,6 +236,26 @@
       "path": "cantautori-italiani/zucchero/spirit/05-sempre-e-per-sempre.mp3"
     },
     {
+      "id": "5qg5yn051k",
+      "title": "La canzone del niente",
+      "artist": "Gabriel",
+      "album": "Primo disco",
+      "genre": "Canzoni per Bambini",
+      "duration": 92,
+      "year": 2026,
+      "path": "canzoni-per-bambini/gabriel/primo-disco/01-la-canzone-del-niente.mp3"
+    },
+    {
+      "id": "h5l7miex1x",
+      "title": "Mostri mostri mostricello",
+      "artist": "Gabriel",
+      "album": "Primo disco",
+      "genre": "Canzoni per Bambini",
+      "duration": 176,
+      "year": 2026,
+      "path": "canzoni-per-bambini/gabriel/primo-disco/02-mostri-mostri-mostricello.mp3"
+    },
+    {
       "id": "i1jf8xn8sm",
       "title": "Alpha 10 Hz · ambient · 5 min loop",
       "artist": "Binaurali",
@@ -348,6 +368,10 @@
         "t5qg954i8o",
         "b3wqhegv5y"
       ],
+      "Canzoni per Bambini": [
+        "5qg5yn051k",
+        "h5l7miex1x"
+      ],
       "Risonanze": [
         "i1jf8xn8sm",
         "evaukgqo37",
@@ -399,6 +423,10 @@
         "u2b0ra1ri8",
         "t5qg954i8o",
         "b3wqhegv5y"
+      ],
+      "Gabriel": [
+        "5qg5yn051k",
+        "h5l7miex1x"
       ],
       "Binaurali": [
         "i1jf8xn8sm",
@@ -459,6 +487,10 @@
         "u2b0ra1ri8",
         "t5qg954i8o",
         "b3wqhegv5y"
+      ],
+      "Primo disco|Gabriel": [
+        "5qg5yn051k",
+        "h5l7miex1x"
       ],
       "Calm Focus Ambient|Binaurali": [
         "i1jf8xn8sm"
