@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-21T12:03:28.041Z",
+  "generatedAt": "2026-08-27T15:38:42.256Z",
   "tracks": [
     {
       "id": "otefab39sr",
@@ -256,6 +256,56 @@
       "path": "canzoni-per-bambini/gabriel/primo-disco/02-mostri-mostri-mostricello.mp3"
     },
     {
+      "id": "rkiiu5u4cx",
+      "title": "3 venti",
+      "artist": "L'isola dei 3 venti",
+      "album": "L'isola dei 3 venti",
+      "genre": "Canzoni per Bambini",
+      "duration": 76,
+      "year": 2026,
+      "path": "canzoni-per-bambini/l-isola-dei-3-venti/l-isola-dei-3-venti-2026/01-3-venti.mp3"
+    },
+    {
+      "id": "cd5jqmi21j",
+      "title": "3 fratelli",
+      "artist": "L'isola dei 3 venti",
+      "album": "L'isola dei 3 venti",
+      "genre": "Canzoni per Bambini",
+      "duration": 116,
+      "year": 2026,
+      "path": "canzoni-per-bambini/l-isola-dei-3-venti/l-isola-dei-3-venti-2026/02-3-fratelli.mp3"
+    },
+    {
+      "id": "wsk7chtb6p",
+      "title": "I cuccioli",
+      "artist": "L'isola dei 3 venti",
+      "album": "L'isola dei 3 venti",
+      "genre": "Canzoni per Bambini",
+      "duration": 90,
+      "year": 2026,
+      "path": "canzoni-per-bambini/l-isola-dei-3-venti/l-isola-dei-3-venti-2026/03-i-cuccioli.mp3"
+    },
+    {
+      "id": "2lb1wo5q1q",
+      "title": "Il ballo dei venti",
+      "artist": "L'isola dei 3 venti",
+      "album": "L'isola dei 3 venti",
+      "genre": "Canzoni per Bambini",
+      "duration": 79,
+      "year": 2026,
+      "path": "canzoni-per-bambini/l-isola-dei-3-venti/l-isola-dei-3-venti-2026/04-il-ballo-dei-venti.mp3"
+    },
+    {
+      "id": "skg79ci7h4",
+      "title": "Il girotondo del raccolto",
+      "artist": "L'isola dei 3 venti",
+      "album": "L'isola dei 3 venti",
+      "genre": "Canzoni per Bambini",
+      "duration": 67,
+      "year": 2026,
+      "path": "canzoni-per-bambini/l-isola-dei-3-venti/l-isola-dei-3-venti-2026/05-il-girotondo-del-raccolto.mp3"
+    },
+    {
       "id": "i1jf8xn8sm",
       "title": "Alpha 10 Hz · ambient · 5 min loop",
       "artist": "Binaurali",
@@ -370,7 +420,12 @@
       ],
       "Canzoni per Bambini": [
         "5qg5yn051k",
-        "h5l7miex1x"
+        "h5l7miex1x",
+        "rkiiu5u4cx",
+        "cd5jqmi21j",
+        "wsk7chtb6p",
+        "2lb1wo5q1q",
+        "skg79ci7h4"
       ],
       "Risonanze": [
         "i1jf8xn8sm",
@@ -427,6 +482,13 @@
       "Gabriel": [
         "5qg5yn051k",
         "h5l7miex1x"
+      ],
+      "L'isola dei 3 venti": [
+        "rkiiu5u4cx",
+        "cd5jqmi21j",
+        "wsk7chtb6p",
+        "2lb1wo5q1q",
+        "skg79ci7h4"
       ],
       "Binaurali": [
         "i1jf8xn8sm",
@@ -491,6 +553,13 @@
       "Primo disco|Gabriel": [
         "5qg5yn051k",
         "h5l7miex1x"
+      ],
+      "L'isola dei 3 venti|L'isola dei 3 venti": [
+        "rkiiu5u4cx",
+        "cd5jqmi21j",
+        "wsk7chtb6p",
+        "2lb1wo5q1q",
+        "skg79ci7h4"
       ],
       "Calm Focus Ambient|Binaurali": [
         "i1jf8xn8sm"
