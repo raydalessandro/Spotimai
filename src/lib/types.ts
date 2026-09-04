@@ -29,11 +29,15 @@ export type Library = {
   customPlaylists: Playlist[];
 };
 
+/** Stato di lavorazione di una versione, nella sezione di selezione NVLL CLICK. */
+export type NvllStatus = 'definitivo' | 'provvisorio' | 'scartato';
+
 export type View =
   | { kind: 'home' }
   | { kind: 'browse'; type: 'genre' | 'artist' | 'album' }
   | { kind: 'list'; title: string; subtitle?: string; trackIds: string[]; seed: string; kind2?: 'playlist' | 'album' | 'artist' | 'genre' }
   | { kind: 'search' }
-  | { kind: 'playlists' };
+  | { kind: 'playlists' }
+  | { kind: 'nvll' };
 
 export type RepeatMode = 'off' | 'all' | 'one';

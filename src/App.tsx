@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Compass, Search, Library as LibraryIcon, Tag, Mic2, Disc3 } from 'lucide-react';
+import { Compass, Search, Library as LibraryIcon, Tag, Mic2, Disc3, SlidersHorizontal } from 'lucide-react';
 import { NavItem, BottomNavItem } from './components/Nav';
 import MiniPlayer from './components/MiniPlayer';
 import FullPlayer from './components/FullPlayer';
@@ -8,6 +8,7 @@ import BrowseView from './views/BrowseView';
 import ListView from './views/ListView';
 import SearchView from './views/SearchView';
 import PlaylistsView from './views/PlaylistsView';
+import NvllView from './views/NvllView';
 import CreatePlaylistModal from './views/CreatePlaylistModal';
 import AddToPlaylistModal from './views/AddToPlaylistModal';
 import Logo from './components/Logo';
@@ -16,6 +17,7 @@ import { usePlayer } from './state/usePlayer';
 import { useFavorites } from './state/useFavorites';
 import { useCustomPlaylists } from './state/useCustomPlaylists';
 import { useHistory } from './state/useHistory';
+import { useNvll } from './state/useNvll';
 import type { Library, View } from './lib/types';
 
 export default function App() {
@@ -31,6 +33,7 @@ export default function App() {
   const { favorites, toggle: toggleFav } = useFavorites();
   const playlists = useCustomPlaylists(library);
   const playHistory = useHistory();
+  const nvll = useNvll();
 
   useEffect(() => {
     loadLibrary()
@@ -150,6 +153,7 @@ export default function App() {
           <NavItem icon={<Compass size={16} strokeWidth={1.5} />} label="Home" active={view.kind === 'home'} onClick={() => { setView({ kind: 'home' }); setHistory([]); }} />
           <NavItem icon={<Search size={16} strokeWidth={1.5} />} label="Cerca" active={view.kind === 'search'} onClick={() => { setView({ kind: 'search' }); setHistory([]); }} />
           <NavItem icon={<LibraryIcon size={16} strokeWidth={1.5} />} label="Playlist" active={view.kind === 'playlists'} onClick={() => { setView({ kind: 'playlists' }); setHistory([]); }} />
+          <NavItem icon={<SlidersHorizontal size={16} strokeWidth={1.5} />} label="NVLL" active={view.kind === 'nvll'} onClick={() => { setView({ kind: 'nvll' }); setHistory([]); }} />
 
           <div className="mt-6 px-3">
             <p className="text-xs uppercase tracking-[0.2em] text-zinc-600 font-mono mb-3">Sfoglia</p>
@@ -171,6 +175,7 @@ export default function App() {
             {view.kind === 'browse' && <BrowseView {...viewProps} type={view.type} />}
             {view.kind === 'list' && <ListView {...viewProps} title={view.title} subtitle={view.subtitle} trackIds={view.trackIds} seed={view.seed} kind2={view.kind2} />}
             {view.kind === 'search' && <SearchView {...viewProps} />}
+            {view.kind === 'nvll' && <NvllView {...viewProps} nvll={nvll} />}
             {view.kind === 'playlists' && (
               <PlaylistsView
                 {...viewProps}
@@ -196,10 +201,11 @@ export default function App() {
         />
       )}
 
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-900 grid grid-cols-3 z-30">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-zinc-950/95 backdrop-blur border-t border-zinc-900 grid grid-cols-4 z-30">
         <BottomNavItem icon={<Compass size={20} strokeWidth={1.5} />} label="Home" active={view.kind === 'home'} onClick={() => { setView({ kind: 'home' }); setHistory([]); }} />
         <BottomNavItem icon={<Search size={20} strokeWidth={1.5} />} label="Cerca" active={view.kind === 'search'} onClick={() => { setView({ kind: 'search' }); setHistory([]); }} />
         <BottomNavItem icon={<LibraryIcon size={20} strokeWidth={1.5} />} label="Playlist" active={view.kind === 'playlists'} onClick={() => { setView({ kind: 'playlists' }); setHistory([]); }} />
+        <BottomNavItem icon={<SlidersHorizontal size={20} strokeWidth={1.5} />} label="NVLL" active={view.kind === 'nvll'} onClick={() => { setView({ kind: 'nvll' }); setHistory([]); }} />
       </nav>
 
       {showFullPlayer && player.currentTrack && (

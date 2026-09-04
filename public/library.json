@@ -1,51 +1,201 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T15:38:42.256Z",
+  "generatedAt": "2026-09-04T23:00:38.186Z",
   "tracks": [
     {
-      "id": "otefab39sr",
+      "id": "qrtm3prajo",
       "title": "35",
-      "artist": "Ray",
-      "album": "Demo",
+      "artist": "NVLL CLICK",
+      "album": "35",
       "genre": "Boom Bap",
       "duration": 282,
-      "path": "boom-bap/ray/demo/01-35.mp3"
+      "path": "boom-bap/nvll-click/35/01-35.mp3"
     },
     {
-      "id": "0lv483cny0",
-      "title": "Blu Remix",
-      "artist": "Ray",
-      "album": "Demo",
+      "id": "wydel5i93f",
+      "title": "ALGORITHM SYNTH (NULL CLICK)",
+      "artist": "NVLL CLICK",
+      "album": "ALGORITHM SYNTH",
+      "genre": "Boom Bap",
+      "duration": 218,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/algorithm-synth/01-algorithm-synth-null-click.mp3"
+    },
+    {
+      "id": "77knckrm3i",
+      "title": "Blu",
+      "artist": "NVLL CLICK",
+      "album": "Blu",
+      "genre": "Boom Bap",
+      "duration": 197,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/blu/01-blu.mp3"
+    },
+    {
+      "id": "e1bocrrs1e",
+      "title": "Blu (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Blu",
       "genre": "Boom Bap",
       "duration": 248,
-      "path": "boom-bap/ray/demo/02-blu-remix.mp3"
+      "path": "boom-bap/nvll-click/blu/02-blu-remix.mp3"
     },
     {
-      "id": "qg3sjlq21c",
+      "id": "qm3xooi7mn",
+      "title": "Box (Long trial)",
+      "artist": "NVLL CLICK",
+      "album": "Box",
+      "genre": "Boom Bap",
+      "duration": 264,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/box/01-box-long-trial.mp3"
+    },
+    {
+      "id": "2bveep6mpf",
       "title": "City at Night",
-      "artist": "Ray",
-      "album": "Demo",
+      "artist": "NVLL CLICK",
+      "album": "City at Night",
       "genre": "Boom Bap",
       "duration": 236,
-      "path": "boom-bap/ray/demo/03-city-at-night.mp3"
+      "path": "boom-bap/nvll-click/city-at-night/01-city-at-night.mp3"
     },
     {
-      "id": "dz7sockskc",
-      "title": "Glass of Life Remix",
-      "artist": "Ray",
-      "album": "Demo",
+      "id": "st7hbx7qun",
+      "title": "Cose impossibili",
+      "artist": "NVLL CLICK",
+      "album": "Cose impossibili",
+      "genre": "Boom Bap",
+      "duration": 192,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/cose-impossibili/01-cose-impossibili.mp3"
+    },
+    {
+      "id": "lqz3k0ebkn",
+      "title": "DETONA",
+      "artist": "NVLL CLICK",
+      "album": "DETONA",
+      "genre": "Boom Bap",
+      "duration": 175,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/detona/01-detona.mp3"
+    },
+    {
+      "id": "mff75qo52f",
+      "title": "Ghost mode (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Ghost mode",
+      "genre": "Boom Bap",
+      "duration": 193,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/ghost-mode/01-ghost-mode-remix.mp3"
+    },
+    {
+      "id": "c8pudd1lw9",
+      "title": "Glass of Life (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Glass of Life",
       "genre": "Boom Bap",
       "duration": 240,
-      "path": "boom-bap/ray/demo/04-glass-of-life-remix.mp3"
+      "path": "boom-bap/nvll-click/glass-of-life/01-glass-of-life-remix.mp3"
     },
     {
-      "id": "brbgwhfwyf",
-      "title": "Mezzi Immaginari Remix",
-      "artist": "Ray",
-      "album": "Demo",
+      "id": "kwr6m8eb0t",
+      "title": "Kelemata",
+      "artist": "NVLL CLICK",
+      "album": "Kelemata",
+      "genre": "Boom Bap",
+      "duration": 220,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/kelemata/01-kelemata.mp3"
+    },
+    {
+      "id": "q2sa3w1f40",
+      "title": "La banda",
+      "artist": "NVLL CLICK",
+      "album": "La banda",
+      "genre": "Boom Bap",
+      "duration": 238,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/la-banda/01-la-banda.mp3"
+    },
+    {
+      "id": "v8ujdia6nn",
+      "title": "Mezzi Immaginari (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Mezzi Immaginari",
       "genre": "Boom Bap",
       "duration": 153,
-      "path": "boom-bap/ray/demo/05-mezzi-immaginari-remix.mp3"
+      "path": "boom-bap/nvll-click/mezzi-immaginari/01-mezzi-immaginari-remix.mp3"
+    },
+    {
+      "id": "no4546lbw9",
+      "title": "Mind games",
+      "artist": "NVLL CLICK",
+      "album": "Mind games",
+      "genre": "Boom Bap",
+      "duration": 161,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/mind-games/01-mind-games.mp3"
+    },
+    {
+      "id": "p1cbr3qgkh",
+      "title": "Moviola (Remastered)",
+      "artist": "NVLL CLICK",
+      "album": "Moviola",
+      "genre": "Boom Bap",
+      "duration": 154,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/moviola/01-moviola-remastered.mp3"
+    },
+    {
+      "id": "ja43dn47ky",
+      "title": "Null Click Show (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Null Click Show",
+      "genre": "Boom Bap",
+      "duration": 234,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/null-click-show/01-null-click-show-remix.mp3"
+    },
+    {
+      "id": "kfdy8aynfl",
+      "title": "Overskill",
+      "artist": "NVLL CLICK",
+      "album": "Overskill",
+      "genre": "Boom Bap",
+      "duration": 173,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/overskill/01-overskill.mp3"
+    },
+    {
+      "id": "4354t25kek",
+      "title": "Terra",
+      "artist": "NVLL CLICK",
+      "album": "Terra",
+      "genre": "Boom Bap",
+      "duration": 188,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/terra/01-terra.mp3"
+    },
+    {
+      "id": "ykhl4gim2r",
+      "title": "Testi Sepolti",
+      "artist": "NVLL CLICK",
+      "album": "Testi Sepolti",
+      "genre": "Boom Bap",
+      "duration": 192,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/testi-sepolti/01-testi-sepolti.mp3"
+    },
+    {
+      "id": "g0rbzuquhl",
+      "title": "Volti neri (Remix)",
+      "artist": "NVLL CLICK",
+      "album": "Volti neri",
+      "genre": "Boom Bap",
+      "duration": 164,
+      "year": 2026,
+      "path": "boom-bap/nvll-click/volti-neri/01-volti-neri-remix.mp3"
     },
     {
       "id": "utahahq2ca",
@@ -389,11 +539,26 @@
   "autoPlaylists": {
     "byGenre": {
       "Boom Bap": [
-        "otefab39sr",
-        "0lv483cny0",
-        "qg3sjlq21c",
-        "dz7sockskc",
-        "brbgwhfwyf"
+        "qrtm3prajo",
+        "wydel5i93f",
+        "77knckrm3i",
+        "e1bocrrs1e",
+        "qm3xooi7mn",
+        "2bveep6mpf",
+        "st7hbx7qun",
+        "lqz3k0ebkn",
+        "mff75qo52f",
+        "c8pudd1lw9",
+        "kwr6m8eb0t",
+        "q2sa3w1f40",
+        "v8ujdia6nn",
+        "no4546lbw9",
+        "p1cbr3qgkh",
+        "ja43dn47ky",
+        "kfdy8aynfl",
+        "4354t25kek",
+        "ykhl4gim2r",
+        "g0rbzuquhl"
       ],
       "Cantautori Internazionali": [
         "utahahq2ca",
@@ -439,12 +604,27 @@
       ]
     },
     "byArtist": {
-      "Ray": [
-        "otefab39sr",
-        "0lv483cny0",
-        "qg3sjlq21c",
-        "dz7sockskc",
-        "brbgwhfwyf"
+      "NVLL CLICK": [
+        "qrtm3prajo",
+        "wydel5i93f",
+        "77knckrm3i",
+        "e1bocrrs1e",
+        "qm3xooi7mn",
+        "2bveep6mpf",
+        "st7hbx7qun",
+        "lqz3k0ebkn",
+        "mff75qo52f",
+        "c8pudd1lw9",
+        "kwr6m8eb0t",
+        "q2sa3w1f40",
+        "v8ujdia6nn",
+        "no4546lbw9",
+        "p1cbr3qgkh",
+        "ja43dn47ky",
+        "kfdy8aynfl",
+        "4354t25kek",
+        "ykhl4gim2r",
+        "g0rbzuquhl"
       ],
       "Alexandra Burke": [
         "utahahq2ca"
@@ -502,12 +682,63 @@
       ]
     },
     "byAlbum": {
-      "Demo|Ray": [
-        "otefab39sr",
-        "0lv483cny0",
-        "qg3sjlq21c",
-        "dz7sockskc",
-        "brbgwhfwyf"
+      "35|NVLL CLICK": [
+        "qrtm3prajo"
+      ],
+      "ALGORITHM SYNTH|NVLL CLICK": [
+        "wydel5i93f"
+      ],
+      "Blu|NVLL CLICK": [
+        "77knckrm3i",
+        "e1bocrrs1e"
+      ],
+      "Box|NVLL CLICK": [
+        "qm3xooi7mn"
+      ],
+      "City at Night|NVLL CLICK": [
+        "2bveep6mpf"
+      ],
+      "Cose impossibili|NVLL CLICK": [
+        "st7hbx7qun"
+      ],
+      "DETONA|NVLL CLICK": [
+        "lqz3k0ebkn"
+      ],
+      "Ghost mode|NVLL CLICK": [
+        "mff75qo52f"
+      ],
+      "Glass of Life|NVLL CLICK": [
+        "c8pudd1lw9"
+      ],
+      "Kelemata|NVLL CLICK": [
+        "kwr6m8eb0t"
+      ],
+      "La banda|NVLL CLICK": [
+        "q2sa3w1f40"
+      ],
+      "Mezzi Immaginari|NVLL CLICK": [
+        "v8ujdia6nn"
+      ],
+      "Mind games|NVLL CLICK": [
+        "no4546lbw9"
+      ],
+      "Moviola|NVLL CLICK": [
+        "p1cbr3qgkh"
+      ],
+      "Null Click Show|NVLL CLICK": [
+        "ja43dn47ky"
+      ],
+      "Overskill|NVLL CLICK": [
+        "kfdy8aynfl"
+      ],
+      "Terra|NVLL CLICK": [
+        "4354t25kek"
+      ],
+      "Testi Sepolti|NVLL CLICK": [
+        "ykhl4gim2r"
+      ],
+      "Volti neri|NVLL CLICK": [
+        "g0rbzuquhl"
       ],
       "Overcome|Alexandra Burke": [
         "utahahq2ca"
