@@ -29,10 +29,12 @@ export default function App() {
   const [showCreatePlaylist, setShowCreatePlaylist] = useState(false);
   const [addToPlaylistTrackId, setAddToPlaylistTrackId] = useState<string | null>(null);
 
-  const player = usePlayer(library);
+  const playHistory = useHistory();
+  // La cronologia la alimenta il player, non il tap: cosi ci finiscono anche
+  // le tracce partite da sole a fine della precedente.
+  const player = usePlayer(library, playHistory.push);
   const { favorites, toggle: toggleFav } = useFavorites();
   const playlists = useCustomPlaylists(library);
-  const playHistory = useHistory();
   const nvll = useNvll();
 
   useEffect(() => {
@@ -96,7 +98,6 @@ export default function App() {
 
   const handlePlay = (trackId: string, contextIds?: string[]) => {
     const isFirstPlay = player.currentTrackId === null;
-    playHistory.push(trackId);
     player.playTrack(trackId, contextIds);
     if (isFirstPlay && typeof window !== 'undefined' && window.innerWidth < 768) {
       setTimeout(() => setShowFullPlayer(true), 80);
